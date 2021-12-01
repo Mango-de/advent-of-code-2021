@@ -13,10 +13,11 @@ print('...')
 with open(f'inputs/{day}', 'w') as f:
     f.write(result.text[:-1])
     
-with open(f'sulutions/{day}.py', 'w') as f:
+with open(f'solutions/{day}.py', 'w') as f:
     f.write(
 f'''with open('inputs/{day}') as f:
     l = [int(x) for x in f]
+    l = f.read().splitlines() # if you don't have digits
 
 # Part 1
 
