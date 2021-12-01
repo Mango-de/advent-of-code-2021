@@ -15,10 +15,9 @@ print(i1)
 
 i2 = -1
 last2 = 0
-for c in range(len(l)):
-    if c <= 1997:
-        _sum = l[c] + l[c + 1] + l[c + 2]
-        if _sum > last2:
-            i2 += 1
-        last2 = _sum
+for c in range(len(l) - 2):
+    _sum = l[c] + l[c + 1] + l[c + 2]
+    if _sum > last2:
+        i2 += 1
+    last2 = _sum
 print(i2)
