@@ -8,7 +8,7 @@ def fish_after_days(days: int):
     _days = [0] * 9
     for f in l:
         _days[f] += 1
-    for d in range(days):
+    for _ in range(days):
         c = _days.pop(0)
         _days[6] += c
         _days.append(c)
