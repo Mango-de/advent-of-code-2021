@@ -5,14 +5,14 @@ with open('inputs/6') as f:
 # Part 1
 
 def fish_after_days(days: int):
-    _days = [0] * 9
+    fish = [0] * 9
     for f in l:
-        _days[f] += 1
+        fish[f] += 1
     for _ in range(days):
-        c = _days.pop(0)
-        _days[6] += c
-        _days.append(c)
-    return sum(_days)
+        c = fish.pop(0)
+        fish[6] += c
+        fish.append(c)
+    return sum(fish)
     
 print(fish_after_days(80))
 
