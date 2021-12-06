@@ -1,5 +1,3 @@
-from functools import lru_cache, cache
-
 with open('inputs/6') as f:
     l = [int(x) for x in f.read().split(',')]
     # l = f.read().splitlines()
